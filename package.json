@@ -1,0 +1,31 @@
+{
+  "name": "ws-cluster",
+  "version": "1.0.0",
+  "description": "A scalable realtime WebSocket framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wscluster/ws-cluster.git"
+  },
+  "keywords": [
+    "websocket",
+    "ws",
+    "cluster"
+  ],
+  "author": "Lanfei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wscluster/ws-cluster/issues"
+  },
+  "homepage": "https://github.com/wscluster/ws-cluster#readme",
+  "dependencies": {
+    "npc-redis": "^1.0.3",
+    "websocket-lib": "^2.6.1"
+  },
+  "devDependencies": {
+    "wsc-simple-broker": "^1.0.1"
+  }
+}
