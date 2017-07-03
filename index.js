@@ -3,9 +3,22 @@
  * @author Lanfei
  * @module wsc
  */
+exports.Broker = require('./lib/broker');
 exports.Server = require('./lib/server');
 exports.Client = require('./lib/client');
 exports.Session = require('./lib/session');
+
+/**
+ * Create a WebSocket Cluster Broker Server.
+ * @method createBrokerServer
+ * @param   {Object}   [options]
+ * @param   {Object}   [options.httpServer]        see {@link Server#httpServer}
+ * @param   {Boolean}  [options.autoAccept = true] see {@link Server#autoAccept}
+ * @return {Server}
+ */
+exports.createBrokerServer = function (options) {
+	return new exports.Broker.Server(options);
+};
 
 /**
  * Create a WebSocket Cluster Server.
